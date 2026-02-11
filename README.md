@@ -1,5 +1,8 @@
 # Hand2Hand Vision Game ✋✂️
 
+<img width="1728" height="989" alt="Screenshot 2026-02-12 at 12 52 17 AM" src="https://github.com/user-attachments/assets/4f284d28-da0b-491e-a1f6-d5190c63636c" />
+
+
 > **The Ultimate AI-Powered Gesture Combat Experience**
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
