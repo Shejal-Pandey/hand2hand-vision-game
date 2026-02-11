@@ -1,0 +1,103 @@
+@import "https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Outfit:wght@400;700;900&display=swap";
+
+body {
+  background-color: #050505;
+  /* Deep Black */
+  color: #fff;
+  font-family: 'Outfit', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* 
+  FIGMA-STYLE PREMIUM GLASS CARDS (Reference: Bottom Gradient Glow)
+*/
+.figma-card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.02);
+  /* Very subtle fill */
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  /* Subtle transparent border */
+  border-radius: 20px;
+  overflow: hidden;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* The Signature Bottom Glow Gradient - Overlays content nicely */
+.figma-card::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  /* Taller gradient for smoother fade */
+  background: linear-gradient(to top, var(--glow-color, rgba(255, 255, 255, 0.05)), transparent);
+  opacity: 0.5;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* The Bottom "Highlight Line" (Figma specific detail) */
+.figma-card::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--glow-color, rgba(255, 255, 255, 0.2));
+  opacity: 0.8;
+  box-shadow: 0 0 15px var(--glow-color, rgba(255, 255, 255, 0.2));
+}
+
+/* Card Variants for different glow colors */
+.card-blue {
+  --glow-color: #3b82f6;
+}
+
+/* Blue/Cyan */
+.card-green {
+  --glow-color: #10b981;
+}
+
+/* Emerald/Green */
+.card-orange {
+  --glow-color: #f59e0b;
+}
+
+/* Amber/Orange */
+.card-purple {
+  --glow-color: #8b5cf6;
+}
+
+/* Purple/Violet */
+
+.text-gradient {
+  background: linear-gradient(to right, #e2e8f0, #94a3b8);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Scrollbar customized for Dark Mode */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
